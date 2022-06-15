@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+}
+.main-content{
+    min-height: 100vh;
+    width: 80%;
+    margin: 2.5em auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.left-section{
+    grid-column: span 2;
+    height: 100%;
+    background-color: rgb(42, 126, 204);
+}
+.right-section{
+    grid-column: span 5;
+    height: 100%;
+    background-color: rgb(234, 238, 197);
+}
+
+.left-content{
+    padding: 1rem 2rem;
+}
+
+.profile{
+    width:100%;
+    border-bottom: 1px solid white;
+}
+
+.image{
+    width: 100%;
+    text-align: center;
+    border-radius: 50%;
+    border: 8px solid aquamarine;
+}
+
+.name{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.2rem 0;
+}
+.career{
+    font-size: 1.3rem;
+    color:aquamarine;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 1rem; 
+}
+
+.portfolio ul li{
+    padding: 0.4rem 0;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.portfolio span{
+    color: aquamarine;
+    font-size: 1.4rem;
+}
+.main-title{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    padding-top: 1.5rem;
+}
+
+.contact-info ul li{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.contact-info i{
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    color: aquamarine;
+}
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+
+.right-title{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(42, 126, 204);
+    padding-bottom: 1.2rem;
+    
+}
+
+.para{
+    line-height: 1.6rem;
+    font-size:1.1rem;
+    }
+
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.tl-title{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: aquamarine;
+    font-size: 1.2rem;
+
+}
+
+.tl-title-2{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: aquamarine;
+    font-size: 1.2rem;
+
+
+}
+
+.right-tl-content{
+    padding-bottom: 2rem;
+}
+
+.language-section ul li{
+    padding: 0.6rem;
+
+
+}
+
+.bar{
+    width: 50%;
+    height: 0.4rem;
+    background-color: aquamarine;
+    position: relative;
+    border-radius: 12px;
+}
+
+.progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: rgb(42, 126, 204);
+    border-radius: 12px;
+}
+
+.language-title{
+    color: aquamarine;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+}
+
+.turkish{
+    width: 95%;
+
+}
+
+.kurdish{
+    width: 85%;
+
+}
+
+.english{
+    width: 80%;
+
+}
+
+.dutch{
+    width: 45%;
+
+}
+

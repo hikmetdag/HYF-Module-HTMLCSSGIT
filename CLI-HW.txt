@@ -1,0 +1,42 @@
+First Homework:
+
+Q1.How do I create a hidden file or folder? How do I display it in the CLI?
+
+In order to create a hidden file, at the beginning of file name dot must be added.
+
+Example:
+touch .CLIHW.txt
+.......................................
+To make an existing file hidden, a dot(.) is being added to the beginning of the file name.
+
+Example:
+mv CLIHW.txt .CLIHW.txt // by doing so we can hidden a file.
+.......................................
+
+To view hidden file -a flag can be used,
+Example:
+ls -a
+
+--------------------------------------------------------------------------------------------
+Q2.How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+
+The -p tag will create a chance for us to construct nested directories.
+
+mkdir -p c/Users/myusername/these/folders/are/just/for/
+
+-------------------------------------------------------------------------------------------
+
+Q3.How do I append a message to a file, without a newline character?
+
+By opening a file, by 'nano' tag we can append any message to files.
+After adding message to a file, file can be saved by control+O and enter key.
+
+Example:
+
+nano file.txt
+
+
+
+
+
+
