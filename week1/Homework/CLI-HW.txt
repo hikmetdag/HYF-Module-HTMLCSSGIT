@@ -28,12 +28,12 @@ mkdir -p c/Users/myusername/these/folders/are/just/for/
 
 Q3.How do I append a message to a file, without a newline character?
 
-By opening a file, by 'nano' tag we can append any message to files.
-After adding message to a file, file can be saved by control+O and enter key.
+By 'echo' tag, we can append any message to text files.
 
 Example:
 
-nano file.txt
+echo "Second message" >> file.txt
+
 
 
 

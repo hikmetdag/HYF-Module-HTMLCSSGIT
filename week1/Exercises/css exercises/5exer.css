@@ -1,0 +1,69 @@
+
+.header{
+
+height: 280px;
+position: relative;
+
+
+}
+.paraaf{
+    
+    width: 55%;
+    height: 100px;
+    position: absolute;
+    top:50px;
+    float: right;
+    right: 100px;
+}
+.paraaf p{
+    text-align:left;
+    font-size: 40px;
+}
+
+.logo{
+    width: 30%;
+    float: left;
+    left: 10px;
+    height: 300 px;
+    position: absolute;
+    left:50px;
+    top:40px;
+
+}
+
+.logo img{
+    height:200px;
+
+}
+#content{
+    position: relative;
+    height: 600px;
+    
+}
+
+#content-main{
+    height: 500px;
+    position: absolute;
+    right: 20px;
+    width:60%
+    
+}
+#content-side{
+    position: absolute;
+    float: left;
+    width: 35%;
+    height:400px;
+    left:50px
+}
+#content-side dl dt a{
+    font-size: 23px;
+    color:rgb(196, 255, 227);
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+.logo h1{
+    display: none;
+    
+}
