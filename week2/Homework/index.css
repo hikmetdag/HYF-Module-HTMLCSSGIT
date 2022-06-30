@@ -2,6 +2,8 @@
   width: 100%;
   margin-right: 0%;
   margin-left: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .menu {
@@ -169,8 +171,11 @@ nav .button {
   display: flex;
   margin: auto;
   width: 100%;
-  margin-right: 0%;
-  /* justify-content:center; */
+  /* margin-right: 0%; */
+  /* padding: 7%; */
+  margin-right: 10px;
+  overflow-clip-margin:unset;
+
 }
 
 .submitresp {
@@ -180,21 +185,25 @@ nav .button {
 }
 .presentation {
   width: 50%;
-  padding-left: 10%;
-  padding-top: 5%;
+  padding-top: 7%;
+  padding-left:5%;
+
+  
 }
 
 .text h1 {
   display: block;
   letter-spacing: -0.2px;
   font-size: 4rem;
-  line-height: 4.5rem;
+  /* line-height: 4.5rem; */
   font-weight: 600;
   /* max-width: 534px; */
   font-family: "Source Sans Pro", Arial, sans-serif;
   width: 100%;
+ 
+  
 }
-
+/* height was removed */
 .text p {
   display: block;
   font-size: 1.25rem;
@@ -202,16 +211,15 @@ nav .button {
   width: 90%;
   line-height: 1.75rem;
   letter-spacing: 0.1px;
-  height: 10vh;
   box-sizing: border-box;
-  margin-bottom: 24px;
-  height: 20%;
-}
-.text {
-  min-height: 200px;
+  background-color: #1b1fdf;
+  padding: 20px 0;
+  box-sizing:border-box;
 }
 
+
 .buttons {
+  align-content: center;
   display: flex;
   min-height: 150px;
   margin-top: 40px;
@@ -271,6 +279,11 @@ nav .button {
   flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
+  
+  /* Padding was added */
+}
+.institutions ul li{
+  padding: 15px;
 }
 
 .univComps {
@@ -348,6 +361,7 @@ ul {
   list-style: none;
   display: block;
 }
+
 footer a {
   text-decoration: none;
   color: black;
@@ -363,149 +377,39 @@ li {
   line-height: 28px;
   color: black;
 }
-
+/* Padding is added */
 .courserafooter {
   position: relative;
 
   display: block;
+  padding: 15px;
 }
 .courserafooter ul {
   padding-left: 0px;
 }
-
+/* Padding is added */
 .community {
   position: relative;
 
   display: block;
+  padding: 10px;
 }
 .community ul {
   padding-left: 0px;
 }
-
+/* Padding is added */
 .morefooter {
   position: relative;
 
   display: block;
+  padding: 10px;
 }
 .morefooter ul {
   padding-left: 0px;
 }
 
-@media only screen and (max-width: 414px) {
-  * {
-    margin: 0%;
-    padding: 0%;
-  }
 
-  header {
-    align-items: center;
-  }
 
-  .menu i {
-    visibility: visible;
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.231);
-    margin-left: 10px;
-  }
-
-  .submitresp {
-    visibility: visible;
-    font-size: 25px;
-    margin-right: 10px;
-  }
-
-  .search-container,
-  .dropdown,
-  .navlist,
-  nav button {
-    visibility: hidden;
-  }
-  header {
-    position: relative;
-  }
-
-  .head {
-    left: 30%;
-    font-size: 10px;
-  }
-
-  .main {
-    min-width: 100%;
-    margin: 0%;
-    min-height: 100vh;
-  }
-  body {
-    margin-right: 0%;
-    margin-left: 0%;
-    font-size: 1rem;
-  }
-
-  .pict img {
-    visibility: hidden;
-  }
-
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  .joinBtn,
-  .businessBtn {
-    width: 80%;
-    margin-bottom: 20px;
-    margin: 0%;
-    margin-top: 10px;
-  }
-  .text h1 {
-    font-size: 3rem;
-    line-height: 6rem;
-  }
-
-  .institutions ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .bottomSection ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  footer {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .text p {
-    display: block;
-    font-size: 20px;
-    font-family: "Source Sans Pro", Arial, sans-serif;
-    width: 90%;
-    line-height: 28px;
-    letter-spacing: 0.1px;
-    height: 10vh;
-    box-sizing: border-box;
-    margin-bottom: 24px;
-  }
-
-  .presentation {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    width: 100%;
-    margin: auto;
-    flex-shrink: 0;
-    padding: 0%;
-    height: auto;
-  }
-  .pict {
-    width: 0%;
-  }
-
-  .text {
-    overflow: scroll;
-  }
-}
 @media only screen and (max-width: 768px) {
   .menu i {
     visibility: visible;
@@ -532,14 +436,31 @@ li {
     margin-left: 50%;
     font-size: 1.5rem;
   }
+  .pict img {
+    visibility: hidden;
+    width: 0%;
+    height:0px;
+  }
+  .pict{
+    width: 0%;
+    height:0px;
+  }
 
   
 
   .text h1 {
-    font-size: 45px;
-    line-height: 30px;
+    font-size: 2rem;
+    /* line-height: 30px; */
     padding: 20px;
     text-align: center;
+  }
+
+  .text{
+    text-align: center;
+  }
+  .text p{
+    padding: 0px !important;
+    width: 100%;
   }
 
   .buttons {
@@ -579,17 +500,7 @@ li {
     margin: auto;
     padding: 0%;
   }
-  .pict {
-    width: 0%;
-  }
-
-  .presentation {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: auto;
-    padding: 0%;
-  }
+  
 }
 
 @media only screen and (max-width: 1024px) {
@@ -615,7 +526,7 @@ li {
     font-size: 25px;
     margin-right: 10px;
   }
-
+  
   .search-container,
   .dropdown,
   .navlist,
@@ -625,5 +536,8 @@ li {
 
   .head {
     margin-left: 40%;
+  }
+  .buttons{
+    align-items: center;
   }
 }
